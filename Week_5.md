@@ -28,7 +28,7 @@ cd OpenROAD-flow-scripts
 ```bash
 sudo ./setup.sh
 ```
-![setup](snapshots/setup.jpg)
+![setup](assets/setup.jpg)
 
 3. Build OpenROAD
    
@@ -36,7 +36,7 @@ sudo ./setup.sh
 ./build_openroad.sh --local
 ```
 
-![build](snapshots/build_complete.jpg)
+![build](assets/build_complete.jpg)
 
 4. Verify Installation
 
@@ -45,8 +45,8 @@ source ./env.sh
 yosys -help  
 openroad -help
 ```
-![yosys](snapshots/yosys-help.jpg)
-![openroad](snapshots/openroad-help.jpg)
+![yosys](assets/yosys-help.jpg)
+![openroad](assets/openroad-help.jpg)
 
 5. Run the OpenROAD Flow
    
@@ -54,14 +54,14 @@ openroad -help
 cd flow
 make
 ```
-![flow](snapshots/flow.jpg)
+![flow](assets/flow.jpg)
 
 6. Launch the graphical user interface (GUI) to visualize the final layout
 
 ```bash
  make gui_final
 ```
-![final_gui](snapshots/final_gui.jpg)
+![final_gui](assets/final_gui.jpg)
 
 
 ---
@@ -117,7 +117,7 @@ ORD-0047
 >>> read_def /home/tanuja/OpenROAD-flow-scripts/flow/results/nangate45/gcd/base/3_5_place_dp.def
 [INFO ORD-0048] Loading an additional DEF.
 ```
-![setup](snapshots/floorplan_gcd.jpg)
+![setup](assets/floorplan_gcd.jpg)
 ## Placement logs
 ```
 OpenROAD v2.0-25765-g83ff256997 
@@ -131,4 +131,4 @@ Components of this program may be licensed under more restrictive licenses which
 [INFO ODB-0227] LEF file: /home/tanuja/OpenROAD-flow-scripts/flow/platforms/nangate45/lef/NangateOpenCellLibrary.macro.lef, created 134 library cells
 >>> read_db /home/tanuja/OpenROAD-flow-scripts/flow/results/nangate45/gcd/base/3_5_place_dp.odb
 ```
-![setup](snapshots/placement_gcd.jpg)
+![setup](assets/placement_gcd.jpg)
