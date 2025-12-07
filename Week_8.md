@@ -90,4 +90,4 @@ write_spef /home/madank/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/v
 ```
 write_verilog /home/madank/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/vsdbabysoc_post_place.v
 ```
-![routing](assets/Pasted image.png)
+![routing](assets/Pasted_image.png)
