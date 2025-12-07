@@ -98,11 +98,7 @@ This journey taught me:
 
 ✔ Deep STA understanding
 
-✔ Debugging real PnR issues
-
 ✔ Reading & modifying LEF/GDS
-
-✔ Proper PDN planning
 
 ✔ Real-world SoC design constraints
 
