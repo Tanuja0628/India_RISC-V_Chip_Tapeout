@@ -1,0 +1,4 @@
+corner,WNS_max,WNS_min,WNS,TNS,stage
+sky130_fd_sc_hd__tt_025C_1v80.lib,,,,,post_route
+sky130_fd_sc_hd__ss_n40C_1v40.lib,,,,,post_route
+sky130_fd_sc_hd__ff_n40C_1v95.lib,,,,,post_route
