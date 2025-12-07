@@ -25,7 +25,7 @@ $ make
 $ sudo make install
 ```
 #### ✅ Yosys Successfully installed!
-![Yosys](Images/Yosys_done.jpg)
+![Yosys](assets/Yosys_done.jpg)
 ---
 ### Iverilog
 ```bash
@@ -33,7 +33,7 @@ $ sudo apt-get update
 $ sudo apt-get install iverilog
 ```
 #### ✅ Iverilog Successfully installed!
-![Iverilog](Images/Iverilog_done.jpg)
+![Iverilog](assets/Iverilog_done.jpg)
 ---
 ### GTKWave
 ```bash
@@ -41,7 +41,7 @@ $ sudo apt-get update
 $ sudo apt install gtkwave
 ```
 #### ✅ GTKWave Successfully installed!
-![GTKWave](Images/GTKWave_done.jpg)
+![GTKWave](assets/GTKWave_done.jpg)
 ---
 
 # 🎯 Conclusion
