@@ -96,7 +96,7 @@ write_verilog /home/tanuja/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabyso
 
 ---
 
-## post route Static Timing Analysis
+## Post Route Static Timing Analysis
 
 Post-route Static Timing Analysis (STA) is carried out after the routing stage to ensure that the chip still meets all timing requirements under different PVT (Process–Voltage–Temperature) corners. Since routing adds parasitic resistance and capacitance to the nets, these effects must be accounted for before finalizing the layout. Post-route STA checks timing on the fully extracted layout (GDSII) and confirms that it satisfies all constraints. During this analysis, key timing metrics such as Worst Negative Slack (WNS), Total Negative Slack (TNS), and setup/hold margins are reported.
 
@@ -172,6 +172,11 @@ set list_of_lib_files(3) "sky130_fd_sc_hd__ff_n40C_1v95.lib"
 
 ```
 
+Command to run in terminal
+```
+sta sta.tcl
+```
+
 This generates the following files
 
 - min_max_sky130_fd_sc_hd__ff_n40C_1v95.lib.txt
@@ -182,3 +187,5 @@ This generates the following files
 - sta_worst_max_slack.txt
 - sta_worst_min_slack.txt
 - timing_summary.csv
+
+---
