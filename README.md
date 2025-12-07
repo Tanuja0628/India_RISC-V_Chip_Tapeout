@@ -76,47 +76,36 @@ Debugging tasks:
 
 ## 🚧 Key Debugging Issues & Fixes
 1. No liberty libraries found
-
-Fixed by:
-
-Adding correct paths in config.tcl
+Fixed by: Adding correct paths in config.tcl
 
 2. Missing source RTL file
-
-Solved by fixing:
-
-VERILOG_FILES path
+Solved by fixing:VERILOG_FILES path
 
 3. Off-grid pin errors
+Solved by: Editing LEF,Snapping pins to grid
 
-Solved by:
-
-Editing LEF
-
-Snapping pins to grid
-
-4. STA failing due to missing corners
-
-Fixed by:
-
-Adding ff, ss, tt libs
+4. STA failing due to missing corners 
+Fixed by: Adding ff, ss, tt libs
 
 5. Floorplan earlier failure
-
-Solved by:
-
-Correct macro placement configuration
+Solved by: Correct macro placement configuration
 
 ## 🎓 Major Learnings & Reflections
 
 This journey taught me:
 
 ✔ Full RTL-to-GDS flow
+
 ✔ Deep STA understanding
+
 ✔ Debugging real PnR issues
+
 ✔ Reading & modifying LEF/GDS
+
 ✔ Proper PDN planning
+
 ✔ Real-world SoC design constraints
+
 ✔ Open-source ASIC toolchain mastery
 
 ### Most importantly:
