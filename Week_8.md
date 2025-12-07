@@ -210,6 +210,7 @@ This generates the following files
 - sta_wns.txt
 - sta_worst_max_slack.txt
 - sta_worst_min_slack.txt
-- timing_summary.csv
+
+These files are availabel in Post_Route_STA folder
 
 ---
