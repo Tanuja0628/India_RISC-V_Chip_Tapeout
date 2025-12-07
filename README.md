@@ -11,14 +11,6 @@ The goal of this journey was to understand, build, verify, and tapeout a RISC-V 
 - Tools & Technologies Used
 - Design Flow Summary
 - RTL Design and Understanding
-- Synthesis (Yosys)
-- Floorplanning
-- Placement
-- Clock Tree Synthesis (CTS)
-- Routing
-- Parasitic Extraction
-- Static Timing Analysis (STA)
-- DFT, Signoff & GDSII
 - Key Debugging Issues & How I Fixed Them
 - Major Learnings & Reflections
 - Acknowledgements
@@ -48,8 +40,7 @@ The program covers:
 7. Netgen – LVS
 8. OpenROAD – Routing
 9. OpenSTA – Static Timing Analysis
-
-### PDK - SkyWater Sky130 – open-source 130nm PDK
+10. PDK - SkyWater Sky130 – open-source 130nm PDK
 
 ## 🧩 Design Flow Summary
 
