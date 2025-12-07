@@ -47,11 +47,13 @@ openroad
 ```
 Load the post-route database and write the DEF:
 ```
-read_db /home/madank/OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base/5_route.odb
-write_def /home/madank/OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base/5_route.def
+read_db /home/tanuja/OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base/5_route.odb
+write_def /home/tanuja/OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base/5_route.def
 ```
 - Generating Post-Route SPEF File
+  
 Follow the steps below to generate the SPEF file:
+
 1. Launch OpenROAD
 ```
 cd ~/OpenROAD-flow-scripts
@@ -61,11 +63,11 @@ openroad
 ```
 2. Load the required LEF files, timing libraries and post route def
 ```
-read_lef /home/madank/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/sky130hd.lef
-read_lef /home/madank/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/avsdpll.lef
-read_lef /home/madank/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/avsddac.lef
-read_liberty /home/madank/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-read_def /home/madank/OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base/5_route.def
+read_lef /home/tanuja/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/sky130hd.lef
+read_lef /home/tanuja/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/avsdpll.lef
+read_lef /home/tanuja/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/lef/avsddac.lef
+read_liberty /home/tanuja/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_def /home/tanuja/OpenROAD-flow-scripts/flow/results/sky130hd/vsdbabysoc/base/5_route.def
 ```
 3. Set up the parasitic extraction models
 Create the external-resources/ directory and clone open_pdks inside it:
@@ -76,18 +78,23 @@ git clone https://github.com/RTimothyEdwards/open_pdks.git
 ```
 Define the extraction model:
 ```
-define_process_corner -ext_model_index 0 /home/madank/OpenROAD-flow-scripts/external-resources/open_pdks/sky130/openlane/rules.openrcx.sky130A.nom.calibre
+define_process_corner -ext_model_index 0 /home/tanuja/OpenROAD-flow-scripts/external-resources/open_pdks/sky130/openlane/rules.openrcx.sky130A.nom.calibre
 ```
 6. Extract parasitics
 ```
-extract_parasitics -ext_model_file /home/madank/OpenROAD-flow-scripts/external-resources/open_pdks/sky130/openlane/rules.openrcx.sky130A.nom.calibre
+extract_parasitics -ext_model_file /home/tanuja/OpenROAD-flow-scripts/external-resources/open_pdks/sky130/openlane/rules.openrcx.sky130A.nom.calibre
 ```
 7. Write the SPEF file
 ```
-write_spef /home/madank/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/vsdbabysoc.spef
+write_spef /home/tanuja/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/vsdbabysoc.spef
 ```
 8. Export the post-route Verilog netlist
 ```
-write_verilog /home/madank/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/vsdbabysoc_post_place.v
+write_verilog /home/tanuja/OpenROAD-flow-scripts/flow/designs/sky130hd/vsdbabysoc/vsdbabysoc_post_place.v
 ```
 ![routing](assets/Pasted_image.png)
+
+---
+
+## Post Route STA
+
