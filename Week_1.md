@@ -71,7 +71,8 @@ Each day includes:
 ```
 
 Each Day folder contains output of lab files, and output screenshots.
-The detailed Week 1 git link is [HERE]([https://example.com/data](https://github.com/Tanuja0628/RISC-V_SOC_week1))
+
+The detailed Week 1 git link is [HERE](https://github.com/Tanuja0628/RISC-V_SOC_week1)
 
 # 🙏 Acknowledgements
 
