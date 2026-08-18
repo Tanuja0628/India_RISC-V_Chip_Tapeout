@@ -43,10 +43,15 @@ By the end of this workshop, participants will gain hands-on experience in desig
 The content is organized by day, each with a dedicated folder, README, and labs:
 
 Day	Topics Covered
+
 Day 1	Introduction to Verilog RTL Design & Synthesis
+
 Day 2	Timing Libraries, Synthesis Approaches, Efficient Flip-Flop Coding
+
 Day 3	Combinational & Sequential Optimization
+
 Day 4	Gate-Level Simulation (GLS), Blocking vs Non-Blocking Assignments, Synthesis-Simulation Mismatch
+
 Day 5	Optimization in Synthesis
 
 Each day includes:
